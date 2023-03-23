@@ -1,0 +1,16 @@
+<%- include("partials/header"); %>
+
+<h1><%= title %></h1> 
+<p><%= body %></p> 
+<br>
+
+
+
+<form action="/delete" method="post">
+    <div>
+        <a onChange="this.form.submit()" style="text-decoration: none" href="/delete" ><button class='btn btn-primary'>Delete</button></a>
+        <input type="hidden" name="hidden" value="<%= title %>"></input>
+    </div>
+    </form>
+
+<%- include("partials/footer"); %>
